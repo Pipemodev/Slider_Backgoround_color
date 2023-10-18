@@ -24,3 +24,15 @@ inputRojo.addEventListener('change', (e) =>{
     textoRojo.innerText = rojo
     actualizarColor(rojo, verde, azul);
 })
+
+inputVerde.addEventListener('change', (e) =>{
+    let verde = e.target.value;
+    textoRojo.innerText = verde
+    actualizarColor(rojo, verde, azul);
+})
+
+inputAzul.addEventListener('change', (e) =>{
+    let azul = e.target.value;
+    textoAzul.innerText = azul
+    actualizarColor(rojo, verde, azul);
+})
