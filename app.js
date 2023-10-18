@@ -13,3 +13,14 @@ let azul = inputAzul.value;
 textoRojo.innerText = rojo;
 textoVerde.innerText = verde;
 textoAzul.innerText = azul;
+
+function actualizarColor (rojo, verde, azul){
+    const colorRGB = `rgb(${rojo}, ${verde}, ${azul})`
+    document.body.style.backgroundColor = colorRGB;
+}
+
+inputRojo.addEventListener('change', (e) =>{
+    let rojo = e.target.value;
+    textoRojo.innerText = rojo
+    actualizarColor(rojo, verde, azul);
+})
